@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-引入方式</title>
+    </head>
+    <body>
+        <input type="button" id="btn1" value="按钮1" onclick="on()">
+        <input type="button" id="btn2" value="按钮2" >
+
+
+    </body>
+    <script>
+        function on() {
+            alert("按钮1被点击了");
+        }
+        document.getElementById("btn2").onclick = function () {
+            alert("按钮2被点击了");
+        }
+    </script>
+</html>

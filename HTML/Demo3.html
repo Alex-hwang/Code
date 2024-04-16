@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-引入方式</title>
+        <script>
+            alert("Hello World!");//弹出对话框
+        </script>
+    </head>
+    <body>
+        <script>
+            alert("Hello World!");//弹出对话框
+            document.write("Hello World! write");//在页面中输出内容
+            console.log("Hello World! console");//在控制台中输出内容
+            var a = 10;
+            var b = 20;
+            var c = a + b;
+            document.write("<br>");//换行
+            document.write(c);
+            var d = "Hello World!";
+            for (var i = 0; i < d.length; i++) {
+                document.write("<br>");
+                document.write(d[i]);
+            }
+            while (a < 20) {
+                document.write("<br>");
+                document.write(a);
+                a++;
+            }
+            do {
+                document.write("<br>");
+                document.write(b);
+                b++;
+            } while (b < 30);
+            if (a < 20) {
+                document.write("<br>");
+                document.write("a小于20");
+            } else {
+                document.write("<br>");
+                document.write("a大于等于20");
+            }
+            switch (a) {
+                case 10:
+                    document.write("<br>");
+                    document.write("a等于10");
+                    break;
+                case 20:
+                    document.write("<br>");
+                    document.write("a等于20");
+                    break;
+                default:
+                    document.write("<br>");
+                    document.write("a不等于10也不等于20");
+                    break;
+            }
+            var e = 0;
+            var f = 0;
+            function add(var1, var2) {
+                return var1 + var2;
+            }
+            e = add(1, 2);
+            f = add(3, 4);
+            document.write("<br>");
+            document.write(e);
+            document.write("<br>");
+            document.write(f);
+            Array = [1, 2, 3, 4, 5];
+            for (var i = 0; i < Array.length; i++) {
+                document.write("<br>");
+                document.write(Array[i]);
+            }
+            String = "Hello World!";
+            for (var i = 0; i < String.length; i++) {
+                document.write("<br>");
+                document.write(String[i]);
+            }
+            var user = {name: "张三", age: 20};
+            document.write("<br>");
+            document.write(user.name);
+            document.write("<br>");
+            document.write(user.age);
+            //BOM是浏览器对象模型
+            confirm("Hello World! confirm");//弹出确认对话框
+            if (confirm("Hello World! confirm")) {
+                alert("Hello World! confirm true");
+            } else {
+                alert("Hello World! confirm false");
+            }
+            //DOM是文档对象模型
+            var x = document.getElementById("demo");//获取id为demo的元素
+            document.write("<br>");//换行
+            document.write(x.innerHTML);//输出元素的内容
+            x.innerHTML = "Hello World!";//修改元素的内容
+            document.write("<br>");//换行
+            document.write(x.innerHTML);//输出元素的内容
+            var y = document.getElementsByTagName("p");//获取标签为p的元素
+            document.write("<br>");//换行
+            document.write(y[0].innerHTML);//输出元素的内容
+            y[0].innerHTML = "Hello World!";//修改元素的内容
+            document.write("<br>");//换行
+            document.write(y[0].innerHTML);//输出元素的内容
+        </script>
+        <script src="Demo2.js"></script>
+    </body>
+</html>
