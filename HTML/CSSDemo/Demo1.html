@@ -1,0 +1,38 @@
+<!-- HTML的局限: 1. 代码重复 2. 代码混乱 3. 代码不好维护
+CSS是层叠样式表，有时也称为级联样式表或CSS样式表，是一种标记语言
+用来描述网页的表现层。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页元素进行格式化。 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CSS代码规范</title>
+        <style>
+            p { 
+                color: red;
+                font-size: 20px;
+            }
+        </style>
+        <style>
+            .div { 
+                color: blue;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            测试样例1
+        </p>
+        <p>
+            测试样例2
+        </p>
+        <p>
+            测试样例3
+        </p>
+        <div class="div"> <!-- 如果需要修改样式，只需要修改CSS文件即可 </div> -->
+            测试样例4
+        </div>
+    </body>
+</html>
